@@ -1,8 +1,20 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+const blinkAnimation = keyframes`
+  0% {
+    background: var(--black);
+  }
+  50% {
+    background: var(--grey-600);
+  }
+  100% {
+    background: var(--black);
+  }
+`;
 
 const Wrapper = styled.section`
   display: grid;
   align-items: center;
+  background-color: var(--black);
   .logo {
     display: block;
     margin: 0 auto;
@@ -27,9 +39,20 @@ const Wrapper = styled.section`
   .member-btn {
     background: transparent;
     border: transparent;
-    color: var(--primary-500);
+    color: var(--primary-700);
     cursor: pointer;
     letter-spacing: var(--letterSpacing);
+  }
+
+  .btn-hipster {
+  color: var(--primary-500);
+  background-color: var(--black);
+  animation: ${blinkAnimation} 1s infinite;
+  }
+
+  .btn-hipster:hover {
+    color: var(--primary-200);
+    background: var(--grey-800);
   }
 `
 export default Wrapper

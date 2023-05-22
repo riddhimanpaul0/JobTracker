@@ -13,7 +13,19 @@ html {
 
 :root {
   /* colors */
-  --primary-50: #e0fcff;
+
+  --primary-50:  #ffffd9;
+  --primary-100: #fffdb0;
+  --primary-200: #fffd78;
+  --primary-300: #fffd47;
+  --primary-400: #fffd1e;
+  --primary-500: #fdd54f;
+  --primary-600: #e8c72f;
+  --primary-700: #d6b40c;
+  --primary-800: #c1a100;
+  --primary-900: #9f7e00;
+
+  /* --primary-50: #e0fcff;
   --primary-100: #bef8fd;
   --primary-200: #87eaf2;
   --primary-300: #54d1db;
@@ -22,7 +34,7 @@ html {
   --primary-600: #14919b;
   --primary-700: #0e7c86;
   --primary-800: #0a6c74;
-  --primary-900: #044e54;
+  --primary-900: #044e54; */
 
   /* grey */
   --grey-50: #f0f4f8;
@@ -53,7 +65,7 @@ html {
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
-  --transition: 0.3s ease-in-out all;
+  --transition: 0.1s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 500px;
   --fluid-width: 90vw;
@@ -147,7 +159,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  color: var(--white);
+  color: var(--black);
   background: var(--primary-500);
   border: transparent;
   border-radius: var(--borderRadius);
@@ -162,14 +174,7 @@ ul {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
-.btn-hipster {
-  color: var(--primary-500);
-  background: var(--primary-200);
-}
-.btn-hipster:hover {
-  color: var(--primary-200);
-  background: var(--primary-700);
-}
+
 .btn-block {
   width: 100%;
 }

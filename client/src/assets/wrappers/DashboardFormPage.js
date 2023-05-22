@@ -3,8 +3,8 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
   border-radius: var(--borderRadius);
   width: 100%;
-  background: var(--white);
   padding: 3rem 2rem 4rem;
+  background-color: white;
   box-shadow: var(--shadow-2);
   h3 {
     margin-top: 0;
@@ -40,10 +40,11 @@ const Wrapper = styled.section`
     }
   }
   .clear-btn {
-    background: var(--grey-500);
+    background: var(--black);
+    color: var(--primary-500);
   }
   .clear-btn:hover {
-    background: var(--black);
+    background: var(--grey-500);
   }
   @media (min-width: 992px) {
     .form-center {

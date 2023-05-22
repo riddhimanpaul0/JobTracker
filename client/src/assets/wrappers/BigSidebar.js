@@ -6,7 +6,7 @@ const Wrapper = styled.aside`
     display: block;
     box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
     .sidebar-container {
-      background: var(--white);
+      background: var(--black);
       min-height: 100vh;
       height: 100%;
       width: 250px;
@@ -24,7 +24,10 @@ const Wrapper = styled.aside`
       height: 6rem;
       display: flex;
       align-items: center;
-      padding-left: 2.5rem;
+      padding-left: 2rem;
+    }
+    header img{
+      width: 80%
     }
     .nav-links {
       padding-top: 2rem;
@@ -56,7 +59,7 @@ const Wrapper = styled.aside`
       transition: var(--transition);
     }
     .active {
-      color: var(--grey-900);
+      color: var(--primary-500);
     }
     .active .icon {
       color: var(--primary-500);

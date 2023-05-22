@@ -5,14 +5,14 @@ const SharedLayout = () => {
     return (
         <Wrapper>
             <main className='dashboard'>
-            <SmallSidebar/>
-            <BigSidebar/>
-            <div>
-                <Navbar/>
-                <div className='dashboard-page'>
-                    <Outlet/>
+                <SmallSidebar/>
+                <BigSidebar/>
+                <div>
+                    <Navbar/>
+                    <div className='dashboard-page'>
+                        <Outlet/>
+                    </div>
                 </div>
-            </div>
             </main>
         </Wrapper>
     )

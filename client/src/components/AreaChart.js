@@ -10,18 +10,20 @@ import {
   
   const AreaChartComponent = ({ data }) => {
     return (
-      <ResponsiveContainer width='100%' height={300}>
+      <ResponsiveContainer width='100%' height={500}>
+        
         <AreaChart
           data={data}
           margin={{
             top: 50,
           }}
         >
-          <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey='date' />
+      
+          <CartesianGrid  strokeDasharray='3 3' />
+          <XAxis dataKey='date'/>
           <YAxis allowDecimals={false} />
           <Tooltip />
-          <Area type='monotone' dataKey='count' stroke='#2cb1bc' fill='#bef8fd' />
+          <Area type='monotone' dataKey='count' stroke='#fdd54f' fill='#fffdb0' />
         </AreaChart>
       </ResponsiveContainer>
     );

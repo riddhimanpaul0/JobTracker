@@ -9,7 +9,7 @@ const Wrapper = styled.nav`
   .logo {
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 200px;
   }
   .nav-center {
     display: flex;
@@ -26,7 +26,7 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
   }
-  background: var(--white);
+  background: var(--black);
   .btn-container {
     position: relative;
   }
@@ -44,13 +44,14 @@ const Wrapper = styled.nav`
     top: 40px;
     left: 0;
     width: 100%;
-    background: var(--primary-100);
+    background-color: var(--grey-800);
     box-shadow: var(--shadow-2);
     padding: 0.5rem;
     text-align: center;
     visibility: hidden;
     border-radius: var(--borderRadius);
   }
+
   .show-dropdown {
     visibility: visible;
   }
@@ -65,6 +66,7 @@ const Wrapper = styled.nav`
   .logo-text {
     display: none;
     margin: 0;
+    color: var(--primary-500);
   }
   @media (min-width: 992px) {
     position: sticky;

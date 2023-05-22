@@ -20,7 +20,7 @@ const Wrapper = styled.aside`
     opacity: 1;
   }
   .content {
-    background: var(--white);
+    background: var(--black);
     width: var(--fluid-width);
     height: 95vh;
     border-radius: var(--borderRadius);
@@ -54,7 +54,7 @@ const Wrapper = styled.aside`
     transition: var(--transition);
   }
   .nav-link:hover {
-    color: var(--grey-900);
+    color: var(--primary-100);
   }
   .nav-link:hover .icon {
     color: var(--primary-500);
@@ -67,7 +67,7 @@ const Wrapper = styled.aside`
     transition: var(--transition);
   }
   .active {
-    color: var(--grey-900);
+    color: var(--primary-500);
   }
   .active .icon {
     color: var(--primary-500);

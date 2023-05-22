@@ -10,7 +10,7 @@ import {
   
   const BarChartComponent = ({ data }) => {
     return (
-      <ResponsiveContainer width='100%' height={300}>
+      <ResponsiveContainer width='100%' height={500}>
         <BarChart
           data={data}
           margin={{
@@ -21,7 +21,7 @@ import {
           <XAxis dataKey='date' />
           <YAxis allowDecimals={false} />
           <Tooltip />
-          <Bar dataKey='count' fill='#2cb1bc' barSize={75} />
+          <Bar dataKey='count' fill='#fdd54f' barSize={60} />
         </BarChart>
       </ResponsiveContainer>
     );
